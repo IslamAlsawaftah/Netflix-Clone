@@ -4,7 +4,7 @@ import ModalMovie from "../ModalMovie/ModalMovie"
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function MovieList({ trends }) {
+function Movie({ trends }) {
     const [chosenMovie, setChosenMovie] = useState()
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -13,6 +13,7 @@ function MovieList({ trends }) {
         setChosenMovie(movie)
         handleShow();
     }
+
     return (
         <>
             <Card style={{ width: '18rem', textAlign: 'center', marginBottom: '20px' }}>
@@ -31,4 +32,4 @@ function MovieList({ trends }) {
         </>
     )
 };
-export default MovieList;
+export default Movie;
