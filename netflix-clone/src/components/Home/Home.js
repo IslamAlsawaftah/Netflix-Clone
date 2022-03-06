@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import MovieList from "../MovieList/MovieList";
+import Navbar from "../Navbar/Navbar.js";
+
 export default function Home() {
     const [trends, setTrends] = useState([]);
     // to prevent the error of  Parsing error: Unexpected reserved word 'await' we put async
@@ -16,6 +18,7 @@ export default function Home() {
     return (
         <>
             <h1>Movie List</h1>
+            <Navbar />
             {/* if there is trends, render it, else don't render anything  */}
             {trends && <MovieList trends={trends} />}
         </>
