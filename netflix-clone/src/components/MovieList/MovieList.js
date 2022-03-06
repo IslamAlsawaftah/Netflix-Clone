@@ -2,6 +2,7 @@ import Movie from "../Movie/Movie";
 import "./MovieList.css";
 
 export default function MovieList({ trends }) {
+
     return (
         <div className="cards">
             {
